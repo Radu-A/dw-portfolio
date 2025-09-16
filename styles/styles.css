@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Press+Start+2P&display=swap');
+
+/* General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    font-family: "Press Start 2P";
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url("../assets/patrones-con-ilustraciones-neon_1920x1080_xtrafondos.com.jpg");
+}
+
+header {
+    font-family: "Bitcount Grid Double";
+    padding: 1rem;
+    background-color: #2fa19b;
+    color: #1a1d1e;
+    opacity: 0.9;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Header */
+
+header>h2 {
+    font-size: 2rem;
+}
+
+nav>ul {
+    display: flex;
+    gap: 1rem;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Main */
+
+h1 {
+    font-size: 1.5rem;
+    background-color: #2fa19b;
+    color: #1a1d1e;
+    opacity: 0.9;
+}
+
+h3 {
+    background-color: #2fa19b;
+    color: #1a1d1e;
+    opacity: 0.9;
+}
+
+h4 {
+    color: #e85e9e;
+}
