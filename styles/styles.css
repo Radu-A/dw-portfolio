@@ -22,7 +22,7 @@ header {
     font-family: "Bitcount Grid Double";
     padding: 1rem;
     /* background-color: #2fa19b; */
-    background-color:#e85e9e;
+    background-color:#f0f;
     color: #1a1d1e;
     opacity: 0.9;
 }
@@ -56,26 +56,35 @@ ul {
     list-style: none;
 }
 
-/* Main */
+/* main index */
 
 h1 {
     font-size: 1.5rem;
-    background-color: #2fa19b;
+    background-color: #0ff;
     color: #1a1d1e;
     opacity: 0.9;
 }
 
 h3 {
-    background-color: #2fa19b;
+    background-color: #0ff;
     color: #1a1d1e;
     opacity: 0.9;
 }
 
-h4 {
-    color: #e85e9e;
+.select-link {
+    padding: 1rem;
+    border-radius: 0.3rem;
+    background-color: #f0f;
+
 }
+
+h4 {
+    color: #1a1d1e;
+}
+
+/* main about */
 
 #portrait {
     width: 150px;
-    border: 5px solid #e85e9e;
+    border: 5px solid #f0f;
 }
