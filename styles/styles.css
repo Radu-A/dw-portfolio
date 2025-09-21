@@ -1,6 +1,13 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Orbitron:wght@400..900&family=Press+Start+2P&family=Share+Tech+Mono&family=VT323&display=swap');
+
+/* Variable */
+
+:root {
+    --dark-blue: #1a2c32;
+    --pink: #f0f;
+    --green: #0ff;
+}
 
 /* General Styles */
 
@@ -8,37 +15,44 @@
     margin: 0;
     padding: 0;
     box-sizing: content-box;
+    color: var(--dark-blue);
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("../assets/patrones-con-ilustraciones-neon_1920x1080_xtrafondos.com.jpg");
     font-family: "Press Start 2P";
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-image: url("../assets/patrones-con-ilustraciones-neon_1920x1080_xtrafondos.com.jpg");
 }
 
 header {
+    display: flex;
+    align-items: baseline;
+    gap: 2rem;
+    padding: 1rem 1rem 0rem 1rem;
     font-family: "Bitcount Grid Double";
-    padding: 1rem;
-    /* background-color: #2fa19b; */
-    background-color:#f0f;
-    color: #1a1d1e;
+    background-color:var(--pink);
+    color: var(--dark-blue);
     opacity: 0.9;
+    filter: drop-shadow(0 0 5px var(--pink)) drop-shadow(0 0 15px var(--pink));
 }
 
 main {
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 a {
     color: inherit;
     text-decoration: none;
 }
+
 
 /* Header */
 
@@ -60,22 +74,34 @@ ul {
 
 h1 {
     font-size: 1.5rem;
-    background-color: #0ff;
-    color: #1a1d1e;
+    background-color: var(--green);
     opacity: 0.9;
 }
 
 h3 {
-    background-color: #0ff;
-    color: #1a1d1e;
+    background-color: var(--green);
     opacity: 0.9;
 }
 
 .select-link {
     padding: 1rem;
     border-radius: 0.3rem;
-    background-color: #f0f;
+    background-color: var(--green);
+    filter: drop-shadow(0 0 5px var(--green)) drop-shadow(0 0 15px var(--green));
+}
 
+.select-link:hover {
+    background-color: var(--pink);
+    filter: drop-shadow(0 0 5px var(--pink)) drop-shadow(0 0 15px var(--pink));
+    cursor: pointer;
+}
+
+.select-link a {
+    color: var(--pink);
+}
+
+.select-link:hover a {
+    color: var(--green);
 }
 
 h4 {
@@ -86,5 +112,28 @@ h4 {
 
 #portrait {
     width: 150px;
-    border: 5px solid #f0f;
+    border-radius: 0.5rem;
+    filter: drop-shadow(0 0 2px var(--green)) drop-shadow(0 0 5px var(--green)) drop-shadow(0 0 15px var(--green));
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    border-top: 1px solid var(--pink);
+    font-size: 0.6rem;
+    filter: drop-shadow(0 0 2px var(--pink)) drop-shadow(0 0 5px var(--pink)) drop-shadow(0 0 15px var(--pink));
+}
+
+.footer-name, .footer-nav, .footer-contact {
+    width: 100px;
+    /* flex: 1; */
+}
+
+footer a:hover {
+    filter: drop-shadow(0 0 2px var(--green)) drop-shadow(0 0 5px var(--green)) drop-shadow(0 0 15px var(--green));
 }
