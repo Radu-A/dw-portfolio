@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Orbitron:wght@400..900&family=Press+Start+2P&family=Share+Tech+Mono&family=VT323&display=swap');
 
-/* Variable */
+/* Variables */
 
 :root {
     --dark-blue: #1a2c32;
@@ -124,11 +124,10 @@ h4 {
         "name-label name name"
         "email-label email email"
         "subject-label subject subject"
-        ". normal-label normal-radio"
+        /* ". normal-label normal-radio"
         ". bueno-label bueno-radio"
         ". super-label super-radio"
-        "project-label project-select project-select"
-        "prize-label prize-div prize-div"
+        "project-label project-select project-select" */
         "contact-button contact-button contact-button";
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(8, 1fr);
@@ -154,8 +153,6 @@ h4 {
 #super-radio {grid-area: super-radio;}
 #project-label {grid-area: project-label;}
 #project-select {grid-area: project-select;}
-#prize-label {grid-area: prize-label;}
-#prize-div {grid-area: prize-div;}
 #contact-button {grid-area: contact-button;}
 
 
@@ -164,19 +161,39 @@ h4 {
     border: none;
     border-radius: 0.2rem;
     background: var(--dark-blue);
+    font-family: "Press Start 2P";
+    font-size: 0.7rem;
     color: var(--green);
+}
+
+.type-label {
+    font-size: 0.8rem;
 }
 
 .contact-form input::placeholder {
     color: var(--green);
 }
 
-.contact-form input[type="radio"] {
+/* .contact-form input[type="radio"] {
     accent-color: var(--pink);
-}
-
-#project-select {
+} */
+/* #project-select {
+    color: var(--green);
+    border-radius: 0.2rem;
     background-color: var(--dark-blue);
+}
+#project-select option {
+    color: var(--green);
+}
+#project-select option:hover {
+    background-color: #f0f;
+}
+::-webkit-scrollbar {
+    display: none;
+} */
+
+#project-button {
+
 }
 
 /* footer */
